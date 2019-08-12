@@ -9,9 +9,9 @@
 
 body {
     background-color: #f8f8f8;
-    /*font-family: 'Lato', sans-serif;*/
-    font-family: 'Righteous', cursive;
+    font-family: 'Source Serif Pro', serif;
     font-size: 1rem;
+    color: #D4C987;
     font-weight: 400;
 }   
 
@@ -24,7 +24,6 @@ li {
     list-style: none;
 }
 
-
 /* <= Main Page => */
 
 nav {
@@ -35,28 +34,33 @@ nav {
 }
 
 .logo {
-    background-color: #EAEAEA;
-    width: 23%;
+    background-color: #202D5D;
+    max-width: 250px;
     height: 10vh;
 }
 
 .logo-link {
     text-transform: uppercase;
-    color: #4F6D7A;
     font-weight: 100;
     font-size: 1.5em;
     letter-spacing: 0.4rem;
-    /* font-family: 'Righteous', cursive; */
     font-family: 'Courgette', cursive;
     line-height: 1.3em;
     padding-left: .5em;
     position: relative;
     top: 30%;
+    color: #8A7C2C;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 0.8em;
+    }
 }
 
 .logo-link:hover {
-    color: #B4E1FF;
-    transition: .15s ease-in-out;
+    color: #FFF;
+    transition: .25s ease-in-out;
 }
 
 .main-nav  {
@@ -70,34 +74,39 @@ nav {
     margin-left: 5em;
 }
 
-nav .main-nav li a {
-    color: rgb(112, 112, 112);
+.menu-link {
     font-weight: 400;
     display: block;
     padding: 0.4em;
     border-radius: 10%;
+    letter-spacing: .05em;
 }
 
-nav .main-nav li a:hover {
-    color:rgb(250, 0, 0); 
+.phone {
+    color: #000!important;
+    margin-left: 15em;
+}
+
+.menu-link:hover {
+    color:#626C90;
     transition: .15s ease-in-out;
 }
 
-nav .main-nav li a:active {
+.menu-link:active {
     border: 1px dashed rgba(0, 0, 255, 0.349);
 }
 
 
 .phone {
     text-decoration: none;
-    color: #212021;
+    color: #805C8D;
     font-weight: 400;
 }
 
 /*<= Content =>*/
 
 #frame {
-    /*position: absolute;*/
+    position: absolute;
     z-index: 90;
 }
 
@@ -121,7 +130,6 @@ nav .main-nav li a:active {
     width: 11px;
     height: 1px;
     background-color: gray;
-    /*margin-bottom: 40px;*/
 }
 
 .strip-1 {
@@ -130,41 +138,77 @@ nav .main-nav li a:active {
     background-color: #000;
 }
 
+.strip-1::before {
+    content: "01";
+    position: absolute;
+    top: -8%;
+    left: 6%;
+    font-weight: 600;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1em;
+    color: #000;
+}
+
 .left-content {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 13%;
+    background: linear-gradient(to right, #F6EFD2, #A4ACC7);
 }
 
 .photographer-name {
     margin-bottom: 30px;
+    color: #000;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .photographer-description {
     margin-bottom: 30px;
     font-size: 1em;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    color: #000;
 }
 
-.photographer-insta_link {
+.photographer-insta_link a {
+    font-family: 'Righteous', cursive;
+    color: #8A7C2C;
+}
 
+.photographer-insta_link a:hover {
+    color: #5A526D;
 }
 
 .right-content {
-    width: 50%;
-    z-index: -1;
-    background-image: url(image/bg-camera.jpg);
+    width: 40%;
+    display: block;
+    position: relative;
 }
 
+.right-content::after {
+    content: "";
+    background: url(image/bg-camera.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
 .content-wrapper::after {
     content: "";
     background: url("image/bg-main-olga.jpg") center center no-repeat;
-    z-index: 100;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: 0 2px 2px 0 #9F9974;
     position: absolute;
     left: 45%;
     top: 7%;
     display: inline-block;
     width: 30%;
-    height: 80vh;
+    height: 75vh;
 }
