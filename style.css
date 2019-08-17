@@ -227,12 +227,12 @@ nav {
     text-align: center;
 }
 
-.portfolio-image, .price-image {
+.portfolio-image {
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.portfolio-wrapper, .price-wrapper {
+.portfolio-wrapper {
     display: inline-flex;
     align-items: center;
     background: #D4C987;
@@ -302,10 +302,15 @@ figcaption {
     background: linear-gradient(to right, #A4ACC7, #F6EFD2);
 }
 
+.price-image {
+    max-width: 95%;
+}
+
 .about_me_photo {
-    max-width: 100%;
-    max-height: 100%;
-    margin-right: 2%;
+    max-width: 65%;
+    max-height: 80%;
+    text-align: center;
+    margin: auto;
 }
 
 .about-me-content {
@@ -314,6 +319,8 @@ figcaption {
     font-weight: 600;
     color: #202D5D;
     line-height: 1.2em;
+    margin: auto;
+    padding-left: 1%;
 }
 
 .strips-about-wrapper {
@@ -384,3 +391,35 @@ figcaption {
     color: #000;
 }
 
+.price-wrapper {
+    display: flex;
+}
+
+.price-line-1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.price-line-2 {
+    display: flex;
+    align-items: center;
+}
+
+.price-line-3 {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer nav div ul li a img {
+    width: 30px;
+    height: 30px;
+}
+.contact {
+    display: block;
+}
+/*.footer-nav {*/
+/*    display: inline-flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    !*text-align: center;*!*/
+/*}*/
