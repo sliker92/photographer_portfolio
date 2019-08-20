@@ -5,13 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     line-height: 1rem;
+    font-family: 'Source Sans Pro', Helvetica sans-serif !important;
 }
 
 body {
-    background-color: #f8f8f8;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
-    color: #D4C987;
     font-weight: 400;
 }
 
@@ -24,6 +23,14 @@ li {
     list-style: none;
 }
 
+figcaption {
+    font-size: 1.1em;
+    text-align: left;
+    font-weight: 600;
+    color: #202D5D;
+    margin: 0.4em 0;
+}
+
 /* <= Main Page => */
 
 nav {
@@ -34,22 +41,22 @@ nav {
 }
 
 .logo {
-    background-color: #202D5D;
-    max-width: 250px;
+    background-color: #B29D8E;
+    max-width: 15%;
     height: 10vh;
 }
 
 .logo-link {
     text-transform: uppercase;
-    font-weight: 100;
     font-size: 1.5em;
     letter-spacing: 0.4rem;
-    font-family: 'Courgette', cursive;
     line-height: 1.3em;
     padding-left: .5em;
     position: relative;
     top: 30%;
-    color: #8A7C2C;
+    color: #000;
+    font-weight: 600;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -59,8 +66,13 @@ nav {
 }
 
 .logo-link:hover {
-    color: #FFF;
+    color: #FFEFE4;
     transition: .25s ease-in-out;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.4);
+}
+
+.logo-link:active {
+    transform: scale(0.95);
 }
 
 .main-nav {
@@ -75,36 +87,34 @@ nav {
 }
 
 .menu-link {
-    font-weight: 400;
     display: block;
     padding: 0.4em;
     border-radius: 10%;
-    letter-spacing: .05em;
+    letter-spacing: .1em;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 600;
 }
 
 .menu-link:hover {
-    color: #626C90;
+    color: #759EA7;
     transition: .15s ease-in-out;
+    transform: scale(1.05);
 }
 
 .menu-link:active {
-    border: 1px dashed rgba(0, 0, 255, 0.349);
+    border: 1px dashed rgba(255, 112, 109, 0.349);
 }
 
 
 .phone {
     text-decoration: none;
-    color: #FFF;
-    font-weight: 800;
-    font-size: 1.2em;
+    color: lightcoral;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 /*<= Content =>*/
-
-#frame {
-    position: absolute;
-    z-index: 90;
-}
 
 .content-wrapper {
     height: 90vh;
@@ -140,7 +150,6 @@ nav {
     top: -8%;
     left: 6%;
     font-weight: 600;
-    font-family: 'Source Serif Pro', serif;
     font-size: 1em;
     color: #000;
 }
@@ -151,30 +160,53 @@ nav {
     justify-content: center;
     flex-direction: column;
     padding-left: 13%;
-    background: linear-gradient(to right, #F6EFD2, #A4ACC7);
+    z-index: 1;
+    background: rgb(208, 203, 199);
+    background: linear-gradient(90deg, rgba(208, 203, 199, 1) 2%, rgba(241, 241, 241, 1) 12%, rgba(255, 239, 228, 1) 24%, rgba(184, 197, 198, 1) 46%, rgba(255, 254, 254, 1) 65%, rgba(147, 141, 134, 1) 85%);
+}
+
+.left-content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.25;
+    z-index: 0;
+    background: url("image/bg.jpg");
+}
+
+.title__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60%;
+    height: 30rem;
 }
 
 .photographer-name {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
+    font-size: 2.7rem;
     color: #000;
-    font-family: 'Source Serif Pro', serif;
+    text-shadow: 0 0 6px rgba(206, 215, 145, 1);
+    animation: fadeDowm 2s;
+    padding: 2rem;
+    border: 6px solid #B29D8E;
+    line-height: 1em;
 }
 
 .photographer-description {
-    margin-bottom: 30px;
-    font-size: 1em;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
     color: #000;
-}
-
-.photographer-insta_link a {
-    font-family: 'Righteous', cursive;
-    color: #8A7C2C;
-}
-
-.photographer-insta_link a:hover {
-    color: #5A526D;
+    animation: fadeInUp 3s;
 }
 
 .right-content {
@@ -187,20 +219,20 @@ nav {
     content: "";
     background: url(image/bg-camera.jpg) no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.95;
     top: -12%;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
+    z-index: 2;
 }
 
 .content-wrapper::after {
     content: "";
     background: url("image/bg-main-olga.jpg") center center no-repeat;
     background-size: cover;
-    z-index: 1;
+    z-index: 3;
     box-shadow: 0 2px 2px 0 #9F9974;
     position: absolute;
     left: 45%;
@@ -216,11 +248,35 @@ nav {
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    padding: 2.5em 0;
+    padding: 1.6em 0;
     color: #202D5D;
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: 0.1em;
-    background: #F6EFD2;
+    background: #E4FDFF;
+    position: relative;
+    border-width: 1px 0 1px 0;
+    border-color: #B29D8E;
+    border-style: solid;
+}
+
+.content-heading:before {
+    content: '';
+    height: 2px;
+    width: 40%;
+    background: #B29D8E;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+
+.content-heading:after {
+    content: '';
+    height: 2px;
+    width: 40%;
+    background: #B29D8E;
+    position: absolute;
+    right: 2%;
+    top: 50%;
 }
 
 .portfolio {
@@ -235,7 +291,8 @@ nav {
 .portfolio-wrapper {
     display: inline-flex;
     align-items: center;
-    background: #D4C987;
+    background: rgb(124, 175, 178);
+    background: linear-gradient(184deg, rgba(124, 175, 178, 1) 0%, rgba(255, 254, 254, 1) 100%);
 }
 
 .portfolio-line, .price-line {
@@ -250,14 +307,6 @@ nav {
     font-weight: 200;
     color: black;
     margin-bottom: 0.6em;
-}
-
-figcaption {
-    font-size: 1.1em;
-    text-align: left;
-    font-weight: 600;
-    color: #202D5D;
-    margin-bottom: 0.4em;
 }
 
 .strips-portfolio-wrapper {
@@ -289,7 +338,6 @@ figcaption {
     top: 25%;
     left: 102%;
     font-weight: 600;
-    font-family: 'Source Serif Pro', serif;
     font-size: 1em;
     color: #000;
 }
@@ -299,7 +347,8 @@ figcaption {
     width: 100%;
     height: 80vh;
     justify-content: center;
-    background: linear-gradient(to right, #A4ACC7, #F6EFD2);
+    background: rgb(255, 254, 254);
+    background: linear-gradient(180deg, rgba(255, 254, 254, 1) 0%, rgba(124, 175, 178, 1) 100%);
 }
 
 .price-image {
@@ -352,9 +401,13 @@ figcaption {
     top: 58%;
     left: 102%;
     font-weight: 600;
-    font-family: 'Source Serif Pro', serif;
     font-size: 1em;
     color: #000;
+}
+
+.price-wrapper {
+    background: rgb(124, 175, 178);
+    background: linear-gradient(180deg, rgba(124, 175, 178, 1) 0%, rgba(119, 136, 153, 1) 100%);
 }
 
 .price-price-wrapper {
@@ -386,28 +439,40 @@ figcaption {
     top: 66%;
     left: 102%;
     font-weight: 600;
-    font-family: 'Source Serif Pro', serif;
     font-size: 1em;
     color: #000;
 }
 
 .price-wrapper {
     display: flex;
+    padding: 1rem 0;
 }
 
 .price-line-1 {
+    max-width: 30%;
     display: flex;
     align-items: flex-start;
 }
 
 .price-line-2 {
+    max-width: 45%;
     display: flex;
     align-items: center;
 }
 
 .price-line-3 {
+    max-width: 25%;
     display: flex;
     align-items: flex-end;
+}
+
+.price_descr {
+    font-size: 1.6rem;
+}
+
+.price_cost {
+    color: #FFFEFE;
+    text-decoration: underline;
 }
 
 footer nav div ul li a img {
@@ -419,9 +484,60 @@ footer nav div ul li a img {
     display: block;
 }
 
-/*.footer-nav {*/
-/*    display: inline-flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    !*text-align: center;*!*/
-/*}*/
+.footer_nav {
+    border-top: 2px solid #B29D8E;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: lightslategray;
+}
+
+.contact {
+    margin-top: 4rem;
+    color: #202D5D;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.footer-nav {
+    display: flex;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.footer-nav li {
+    margin: auto;
+}
+
+.menu-link-gmail {
+    color: lightcoral;
+}
+
+.menu-link-gmail:hover {
+    color: #FF706D;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 7%;
+    left: 2%;
+    opacity: 0.7;
+}
+
+.mail-image {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        bottom: 70px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}

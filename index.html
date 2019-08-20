@@ -7,27 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Olga Karpinovich Photographer</title>
     <link rel="shortcut icon" href="image/title.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="./style.css">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:type"
           content="website">
     <meta property="og:title"
-          content="Karpinovich Olha: photographer - Web site">
+          content="Karpinovich Olha - photographer">
     <meta property="og:description"
           content="Сайт портфолио фотограф Ольга Каринович г. Гродно">
 </head>
 
 <body>
-
 <header>
     <nav>
         <div class="logo">
             <a href="#" class="logo-link">Karpinovich.</a>
         </div>
-
         <div class="nav-container">
             <ul class="main-nav">
                 <li><a href="#" class="menu-link menu-link-about">Обо мне</a></li>
@@ -39,9 +39,6 @@
     </nav>
 </header>
 <main>
-    <!--        <svg id="frame" width="68%" height="100%" xmlns='http://www.w3.org/2000/svg'>-->
-    <!--            <rect x=35% y=6vh width=100% height=81vh stroke='coral' stroke-width="10px" fill="none"></rect>-->
-    <!--        </svg>-->
     <div class="content-wrapper">
 
         <div class="left-content">
@@ -51,9 +48,10 @@
                 <span class="strip strip-3"></span>
                 <span class="strip strip-4"></span>
             </div>
-            <h1 class="photographer-name">Ольга Карпинович</h1>
-            <h3 class="photographer-description">Love story, kids, portrait - фотограф в Гродно.</h3>
-            <span class="photographer-insta_link"><a href="#">Instagram account</a></span>
+            <div class="title__wrapper">
+                <h1 class="photographer-name">Ольга Карпинович</h1>
+                <h3 class="photographer-description">Love story, kids, portrait - фотограф в Гродно.</h3>
+            </div>
         </div>
         <div class="right-content">
 
@@ -115,7 +113,6 @@
             voluptates.</p>
     </div>
 </section>
-
 <section>
     <h2 class="content-heading">Стоимость</h2>
     <div class="price-wrapper">
@@ -128,19 +125,19 @@
         <div class="price-line-1">
             <figure>
                 <img class="price-image" src="image/price-long.jpg" alt="desc">
-                <figcaption>12 часов съемки - 300 руб.</figcaption>
+                <figcaption class="price_descr">12 часов съемки - <span class="price_cost">300 руб.</span></figcaption>
             </figure>
         </div>
         <div class="price-line-2">
             <figure>
                 <img class="price-image" src="image/price-family.jpg" alt="desc">
-                <figcaption>4 часа съемки - 120 руб.</figcaption>
+                <figcaption class="price_descr">4 часа съемки - <span class="price_cost">120 руб.</span></figcaption>
             </figure>
         </div>
         <div class="price-line-3">
             <figure>
                 <img class="price-image" src="image/price-hour.jpg" alt="desc">
-                <figcaption>1 час съемки - 40 руб.</figcaption>
+                <figcaption class="price_descr">1 час съемки - <span class="price_cost">40 руб.</span></figcaption>
             </figure>
         </div>
     </div>
@@ -150,9 +147,16 @@
         <span class="contact">Свяжитесь со мной</span>
         <div class="nav-footer-container">
             <ul class="footer-nav">
-                <li><a href="#" class="menu-link menu-link-vk"><img src="image/vk-icon.svg" alt="#"></a></li>
-                <li><a href="#" class="menu-link menu-link-insta"><img src="image/insta-icon.svg" alt="#"></a></li>
-                <li><a href="#" class="menu-link menu-link-gmail"><img src="image/email-icon.svg" alt="#"></a></li>
+                <li>
+                    <a href="mailto:olly2492@gmail.com" class="menu-link">
+                        <span class="menu-link-gmail">olly2492@gmail.com</span>
+                        <img class="mail-image" src="image/email-icon.svg" alt="#" style="height: 3rem;">
+                    </a>
+                </li>
+                <li><a href="#" class="menu-link menu-link-vk"><img class="mail-image" src="image/vk-icon.svg" alt="#"></a>
+                </li>
+                <li><a href="#" class="menu-link menu-link-insta"><img class="mail-image" src="image/insta-icon.svg"
+                                                                       alt="#"></a></li>
                 <li><a class="menu-link phone" href="tel:+375292857804">+375 29 2857804</a></li>
             </ul>
         </div>
