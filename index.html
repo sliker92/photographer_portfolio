@@ -23,141 +23,139 @@
 </head>
 
 <body>
-<header>
+<header class="header">
     <nav>
         <div class="logo">
-            <a href="#" class="logo-link">Karpinovich.</a>
+            <a href="#" class="logo__link">Karpinovich.</a>
         </div>
-        <div class="nav-container">
-            <ul class="main-nav">
-                <li><a href="#" class="menu-link menu-link-about">Обо мне</a></li>
-                <li><a href="#" class="menu-link menu-link-price">Стоимость</a></li>
-                <li><a href="#" class="menu-link menu-link-contacts">Контакты</a></li>
-                <li><a class="menu-link phone" href="tel:+375292857804">+375 29 2857804</a></li>
+        <div class="menu__wrapper_header">
+            <ul class="nav__list">
+                <li><a href="#about" class="menu__link">Обо мне</a></li>
+                <li><a href="#price" class="menu__link">Стоимость</a></li>
+                <li><a href="#contacts" class="menu__link">Контакты</a></li>
+                <li><a class="menu__link menu__link-phone" href="tel:+375292857804">+375 29 2857804</a></li>
             </ul>
         </div>
     </nav>
 </header>
 <main>
-    <div class="content-wrapper">
+    <div class="main__wrapper">
 
-        <div class="left-content">
-            <div class="strips-wrapper">
+        <div class="main__content-left">
+            <div class="main__strips">
                 <span class="strip strip-1"></span>
                 <span class="strip strip-2"></span>
                 <span class="strip strip-3"></span>
                 <span class="strip strip-4"></span>
             </div>
             <div class="title__wrapper">
-                <h1 class="photographer-name">Ольга Карпинович</h1>
-                <h3 class="photographer-description">Love story, kids, portrait - фотограф в Гродно.</h3>
+                <h1 class="title__text animated fadeIn">Ольга Карпинович</h1>
+                <h3 class="title__descr animated fadeIn">Love story, kids, portrait - фотограф в Гродно.</h3>
             </div>
         </div>
-        <div class="right-content">
-
-        </div>
+        <div class="main__content-right"></div>
     </div>
 </main>
-<!--    </section>-->
-<section class="portfolio">
-    <h2 class="content-heading">Мои работы</h2>
-    <div class="portfolio-wrapper">
-        <div class="strips-portfolio-wrapper">
+<section class="portfolio" id="portfolio">
+    <h2 class="content__heading">Мои работы</h2>
+    <div class="portfolio__wrapper">
+        <div class="portfolio__strips">
             <span class="strip strip-1"></span>
             <span class="strip strip-2"></span>
             <span class="strip strip-3"></span>
             <span class="strip strip-4"></span>
         </div>
-        <div class="portfolio-line">
+        <div class="portfolio__content-line">
             <figure>
-                <img class="portfolio-image" src="image/portfolio-kids.jpg" alt="desc">
-                <p class="hashtag-photo">#фото#детскоефото</p>
+                <img class="portfolio-image" src="image/portfolio-kids.jpg" alt="Летнее фото детей в поле">
+                <p class="photo-hashtag">#фото#детскоефото</p>
                 <figcaption>Летнее фото детей в поле</figcaption>
             </figure>
         </div>
-        <div class="portfolio-line">
+        <div class="portfolio__content-line">
             <figure>
-                <img class="portfolio-image" src="image/portfolio-girls.jpg" alt="desc">
-                <p class="hashtag-photo">#фото#makeup</p>
+                <img class="portfolio-image" src="image/portfolio-girls.jpg" alt="Парное фото">
+                <p class="photo-hashtag">#фото#makeup</p>
                 <figcaption>Парное фото</figcaption>
             </figure>
             <figure>
-                <img class="portfolio-image" src="image/portfolio-girl.jpg" alt="desc">
-                <p class="hashtag-photo">#фото#makeup</p>
+                <img class="portfolio-image" src="image/portfolio-girl.jpg"
+                     alt="Осеннее фото девушки с отличным make-up">
+                <p class="photo-hashtag">#фото#makeup</p>
                 <figcaption>Осеннее фото девушки с отличным make-up</figcaption>
             </figure>
         </div>
-        <div class="portfolio-line">
+        <div class="portfolio__content-line">
             <figure>
-                <img class="portfolio-image" src="image/portfolio-girl2.jpg" alt="desc">
-                <p class="hashtag-photo">#фото#фотопрогулка</p>
+                <img class="portfolio-image" src="image/portfolio-girl2.jpg" alt="Фото с прогулки по городу">
+                <p class="photo-hashtag">#фото#фотопрогулка</p>
                 <figcaption>Фото с прогулки по городу, обычный летний вечер</figcaption>
             </figure>
         </div>
     </div>
 </section>
-<section>
-    <h2 class="content-heading">Обо мне</h2>
-    <div class="about_me_wrapper">
-        <div class="strips-about-wrapper">
+<section class="about" id="about">
+    <h2 class="content__heading">Обо мне</h2>
+    <div class="about__wrapper">
+        <div class="about__strips">
             <span class="strip strip-1"></span>
             <span class="strip strip-2"></span>
             <span class="strip strip-3"></span>
             <span class="strip strip-4"></span>
         </div>
-        <img class="about_me_photo" src="./image/aboutme-photo.jpg" alt="#">
-        <p class="about-me-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa ea ipsa
+        <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa ea ipsa
             quae repellendus? Dolorem, facere, nobis. At iure rem sapiente sequi ullam. Deleniti eveniet nesciunt quam
             sint. Facere, quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad alias aliquid
             aspernatur at cumque distinctio dolor ea, enim et fuga magnam minima obcaecati odit quia sed vitae voluptas
             voluptates.</p>
+        <img class="about__photo" src="./image/aboutme-photo.jpg" alt="Карпиновчь Ольга">
     </div>
 </section>
-<section>
-    <h2 class="content-heading">Стоимость</h2>
-    <div class="price-wrapper">
-        <div class="price-price-wrapper">
+<section class="price" id="price">
+    <h2 class="content__heading">Стоимость</h2>
+    <div class="price__wrapper">
+        <div class="price__strips">
             <span class="strip strip-1"></span>
             <span class="strip strip-2"></span>
             <span class="strip strip-3"></span>
             <span class="strip strip-4"></span>
         </div>
-        <div class="price-line-1">
+        <div class="price-1">
             <figure>
-                <img class="price-image" src="image/price-long.jpg" alt="desc">
-                <figcaption class="price_descr">12 часов съемки - <span class="price_cost">300 руб.</span></figcaption>
+                <img class="price__image" src="image/price-long.jpg" alt="Фото с собакой">
+                <figcaption class="price__descr">12 часов съемки - <span class="price__cost">300 руб.</span>
+                </figcaption>
             </figure>
         </div>
-        <div class="price-line-2">
+        <div class="price-2">
             <figure>
-                <img class="price-image" src="image/price-family.jpg" alt="desc">
-                <figcaption class="price_descr">4 часа съемки - <span class="price_cost">120 руб.</span></figcaption>
+                <img class="price__image" src="image/price-family.jpg" alt="Семейное фото">
+                <figcaption class="price__descr">4 часа съемки - <span class="price__cost">120 руб.</span></figcaption>
             </figure>
         </div>
-        <div class="price-line-3">
+        <div class="price-3">
             <figure>
-                <img class="price-image" src="image/price-hour.jpg" alt="desc">
-                <figcaption class="price_descr">1 час съемки - <span class="price_cost">40 руб.</span></figcaption>
+                <img class="price__image" src="image/price-hour.jpg" alt="Девушка и закат солнца">
+                <figcaption class="price__descr">1 час съемки - <span class="price__cost">40 руб.</span></figcaption>
             </figure>
         </div>
     </div>
 </section>
 <footer>
-    <nav class="footer_nav">
-        <span class="contact">Свяжитесь со мной</span>
-        <div class="nav-footer-container">
-            <ul class="footer-nav">
+    <nav class="footer__nav-wrapper">
+        <span class="contact" id="contacts">Свяжитесь со мной</span>
+        <div class="footer__wrapper">
+            <ul class="footer__nav">
                 <li>
-                    <a href="mailto:olly2492@gmail.com" class="menu-link">
-                        <span class="menu-link-gmail">olly2492@gmail.com</span>
-                        <img class="mail-image" src="image/email-icon.svg" alt="#" style="height: 3rem;">
+                    <a href="mailto:olly2492@gmail.com" class="menu__link">
+                        <span class="gmail-link">olly2492@gmail.com</span>
+                        <img class="footer__image mail-image" src="image/email-icon.svg" alt="gmail icon" style="height: 3rem;">
                     </a>
                 </li>
-                <li><a href="#" class="menu-link menu-link-vk"><img class="mail-image" src="image/vk-icon.svg" alt="#"></a>
+                <li><a href="#" class="menu__link"><img class="footer__image" src="image/vk-icon.svg" alt="vk icon"></a>
                 </li>
-                <li><a href="#" class="menu-link menu-link-insta"><img class="mail-image" src="image/insta-icon.svg"
-                                                                       alt="#"></a></li>
-                <li><a class="menu-link phone" href="tel:+375292857804">+375 29 2857804</a></li>
+                <li><a href="#" class="menu__link"><img class="footer__image" src="image/insta-icon.svg" alt="inst icon"></a></li>
+                <li><a class="menu__link footer_phone" href="tel:+375292857804">+375 29 2857804</a></li>
             </ul>
         </div>
         <span class="copyright">&#169; Bogdan Islamov 2019</span>
