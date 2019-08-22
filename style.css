@@ -1,3 +1,23 @@
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -109,6 +129,12 @@ nav {
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .menu__wrapper {
+        display: none;
+    }
+}
+
 .main__wrapper {
     height: 90vh;
     display: flex;
@@ -162,12 +188,32 @@ nav {
     line-height: 1em;
 }
 
+@media screen and (max-width: 1200px) {
+    .title__text {
+        font-size: 2rem;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .title__text {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
 .title__descr {
     margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 800;
     color: #000;
     animation: fadeInUp 3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .title__descr {
+        font-size: 1rem;
+    }
 }
 
 .main__content-right {
@@ -187,6 +233,20 @@ nav {
     right: 0;
     position: absolute;
     z-index: 2;
+}
+
+@media screen and (max-width: 668px) {
+    .main__content-right {
+        background: url("image/bg-main-olga.jpg") center no-repeat;
+    }
+
+    .main__content-right::after {
+        display: none;
+    }
+
+    .main__wrapper::after {
+        display: none;
+    }
 }
 
 .main__wrapper::after {
@@ -252,6 +312,12 @@ nav {
     background: linear-gradient(184deg, rgba(124, 175, 178, 1) 0%, rgba(255, 254, 254, 1) 100%);
 }
 
+@media (max-width: 768px) {
+    .portfolio__wrapper {
+        flex-direction: column;
+    }
+}
+
 .portfolio__content-line, .price-line {
     display: flex;
     flex-direction: column;
@@ -273,6 +339,17 @@ nav {
     justify-content: center;
     background: rgb(255, 254, 254);
     background: linear-gradient(180deg, rgba(255, 254, 254, 1) 0%, rgba(124, 175, 178, 1) 100%);
+}
+
+@media screen and (max-width: 1200px) {
+    .about__wrapper {
+        flex-direction: column;
+    }
+
+    .about__photo {
+        max-width: 80%!important;
+        margin: auto!important;
+    }
 }
 
 .price__image {
@@ -305,6 +382,13 @@ nav {
     background: linear-gradient(180deg, rgba(124, 175, 178, 1) 0%, rgba(119, 136, 153, 1) 100%);
 }
 
+@media screen and (max-width: 1200px) {
+    .price__wrapper {
+        flex-direction: column;
+        margin: auto!important;
+    }
+}
+
 .price-1 {
     max-width: 30%;
     display: flex;
@@ -321,6 +405,20 @@ nav {
     max-width: 25%;
     display: flex;
     align-items: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+    .price-1 {
+        max-width: 100%;
+    }
+
+    .price-2 {
+        max-width: 100%;
+    }
+
+    .price-3 {
+        max-width: 100%;
+    }
 }
 
 .price__descr {
@@ -440,6 +538,12 @@ nav {
     color: #000;
 }
 
+@media screen and (max-width: 1200px) {
+    .main__strips {
+        display: none;
+    }
+}
+
 .portfolio__strips {
     display: flex;
     flex-direction: column;
@@ -471,6 +575,12 @@ nav {
     font-weight: 600;
     font-size: 1em;
     color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio__strips {
+        display: none;
+    }
 }
 
 .about__strips {
@@ -506,6 +616,12 @@ nav {
     color: #000;
 }
 
+@media screen and (max-width: 1200px) {
+    .about__strips {
+        display: none;
+    }
+}
+
 .price__strips {
     display: flex;
     flex-direction: column;
@@ -537,4 +653,10 @@ nav {
     font-weight: 600;
     font-size: 1em;
     color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .price__strips {
+        display: none;
+    }
 }
