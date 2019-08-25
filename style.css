@@ -41,6 +41,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -138,10 +139,131 @@ nav {
     font-size: 1.2rem;
 }
 
+.menu__link-phone {
+    color: #000;
+}
+
 @media screen and (max-width: 767px) {
     .menu__wrapper {
         display: none;
     }
+}
+
+.menu__mobile-burger_wrapper {
+    display: none;
+    position: absolute;
+    right: 5%;
+}
+
+@media screen and (max-width: 767px) {
+    .menu__mobile-burger_wrapper {
+        display: block;
+    }
+}
+
+.menu__mobile-burger {
+    width: 35px;
+    height: 35px;
+    border-radius: 35%;
+    background: #B29D8E;
+    -webkit-box-shadow: -15px 17px 54px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -15px 17px 54px 8px rgba(0,0,0,0.75);
+    box-shadow: -15px 17px 54px 8px rgba(0,0,0,0.75);
+    position: relative;
+    cursor: pointer;
+}
+
+.burgerline {
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: #000;
+}
+
+.burgerline:before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    top: -350%;
+    height: 2px;
+    background: #000;
+}
+
+.burgerline:after {
+    content: '';
+    position: absolute;
+    width: 23px;
+    top: 350%;
+    height: 2px;
+    background: #000;
+}
+
+.open {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    display: block;
+    width: 2px;
+    height: 23px;
+    background: #000;
+}
+
+.open:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    left: 35%;
+    top: 45%;
+    width: 2px;
+    height: 12px;
+    background: #000;
+    transform-origin: bottom;
+    transform: rotate(45deg);
+}
+
+.open:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    left: -50%;
+    top: 45%;
+    width: 2px;
+    height: 12px;
+    background: #000;
+    transform-origin: bottom;
+    transform: rotate(-45deg);
+}
+
+.menu_mobile_wrapper {
+    display: none;
+    width: 100%;
+    height: 15vh;
+    background: #E4FDFF;
+}
+
+.nav__mobile_list {
+    border-top: 1px solid #B29D8E;
+    border-bottom: 2px solid #B29D8E;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.menu__mobile_link {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.menu__mobile_link:active {
+    transform: scale(0.9);
 }
 
 .main__wrapper {
@@ -601,10 +723,11 @@ nav {
 }
 
 .copyright {
+    color: black;
     position: absolute;
     bottom: 7%;
     left: 2%;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .mail-image {

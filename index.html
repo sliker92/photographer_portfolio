@@ -9,8 +9,6 @@
     <link rel="shortcut icon" href="image/title.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap&subset=cyrillic"
           rel="stylesheet">
-    <!--    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap" rel="stylesheet">-->
-    <!--    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="./style.css">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:locale:alternate" content="en_US">
@@ -36,7 +34,19 @@
                 <li><a class="menu__link menu__link-phone" href="tel:+375292857804">+375 29 2857804</a></li>
             </ul>
         </div>
+        <div class="menu__mobile-burger_wrapper">
+            <div class="menu__mobile-burger">
+                <span class="burgerline"></span>
+            </div>
+        </div>
     </nav>
+    <div class="menu_mobile_wrapper">
+        <ul class="nav__mobile_list">
+            <li><a href="#about" class="menu__mobile_link">Обо мне</a></li>
+            <li><a href="#price" class="menu__mobile_link">Стоимость</a></li>
+            <li><a href="#contacts" class="menu__mobile_link">Контакты</a></li>
+        </ul>
+    </div>
 </header>
 <main id="main">
     <div class="main__wrapper">
@@ -141,7 +151,7 @@
         </div>
     </div>
 </section>
-<footer>
+<footer id="footer">
     <nav class="footer__nav-wrapper">
         <span class="contact" id="contacts">Свяжитесь со мной</span>
         <div class="footer__wrapper">
@@ -153,11 +163,11 @@
                              style="height: 3rem;">
                     </a>
                 </li>
-                <li><a href="https://vk.com/id14456575" target="_blank" class="menu__link"><img class="footer__image"
+                <li><a href="https://vk.com/id14456575" target="_blank" rel="noopener" class="menu__link"><img class="footer__image"
                                                                                                 src="image/vk-icon.svg"
                                                                                                 alt="vk icon"></a>
                 </li>
-                <li><a href="https://www.instagram.com/olya.nik_/" target="_blank" class="menu__link"><img
+                <li><a href="https://www.instagram.com/olya.nik_/" target="_blank" rel="noopener" class="menu__link"><img
                         class="footer__image" src="image/insta-icon.svg"
                         alt="inst icon"></a></li>
                 <li><a class="menu__link footer_phone" href="tel:+375292857804">+375 29 2857804</a></li>
